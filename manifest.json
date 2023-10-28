@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "DMFC",
+    "version": "1.0",
+    "description": "DarkModeForCoders",
+    "permissions": [
+      "activeTab",
+      "storage"
+    ],
+    "icons": {
+      "128": "logo1.png"
+    },
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "128": "logo1.png"
+      }
+    },
+    "content_scripts": [
+        {
+          "matches": ["https://leetcode.com/*"],
+          "js": ["./Modes/leetCodecontent.js"],
+          "run_at": "document_end"
+          
+        }
+    ]      
+    
+  }
+  
