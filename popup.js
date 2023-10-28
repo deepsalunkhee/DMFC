@@ -1,5 +1,4 @@
 
-//popup.js
 // This code executes when the popup HTML has fully loaded in the browser.
 document.addEventListener('DOMContentLoaded', function () {
   // Get the reference to the checkbox element with the id "darkModeToggle."
