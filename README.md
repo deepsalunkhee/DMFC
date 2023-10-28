@@ -1,6 +1,6 @@
 # DarkModeForCoders (DMFC) Chrome Extension
 
-DarkModeForCoders (DMFC) is a Chrome extension that enables dark mode for the popular coding platform LeetCode. This extension enhances the user experience by providing a dark-themed interface for coders.
+DarkModeForCoders (DMFC) is a Chrome extension that enables dark mode for the popular website used buy coders. This extension enhances the user experience by providing a dark-themed interface for coders.
 
 
 ## Features
