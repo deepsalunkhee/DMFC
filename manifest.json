@@ -18,10 +18,26 @@
     },
     "content_scripts": [
         {
-          "matches": ["https://leetcode.com/*"],
+          "matches": ["https://leetcode.com/"],
           "js": ["./Modes/leetCodecontent.js"],
           "run_at": "document_end"
           
+        },
+        {
+          "matches": ["https://leetcode.com/explore/"],
+          "js": ["./Modes/leetCodeExplore.js"],
+          "run_at": "document_end"
+        }
+        ,
+        {
+          "matches": ["https://leetcode.com/discuss/"],
+          "js": ["./Modes/leetCodediscuss.js"],
+          "run_at": "document_end"
+        },
+        {
+          "matches": ["https://auth.geeksforgeeks.org/user/*"],
+          "js": ["./Modes/gfgDash.js"],
+          "run_at": "document_end"
         }
     ]      
     
