@@ -1,5 +1,28 @@
 // Apply dark mode styles and save the state in local storage.
 function applyDarkMode() {
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////
+  //the heading navbar
+  var Nav = document.querySelector(".nav-wrapper");
+
+  Nav.style.background="black"
+
+  ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+  //the search bar on the nav
+  // Get the input element
+    var inputElement = document.getElementById('gs_id50');
+
+    // Change the background color
+    inputElement.style.backgroundColor = '#191B2B';
+
+    // Change the text color
+    inputElement.style.color = 'white';
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////
+  // over all background
+
+  var profilecontainer = document.querySelectorAll(".row");
+  profilecontainer[4].style.setProperty('padding-top', '20px', 'important');
+  profilecontainer[4].style.setProperty('background', 'black', 'important');
+  profilecontainer[4].style.setProperty('margin-bottom', '0px', 'important');
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////
   //the info section
 
@@ -76,6 +99,28 @@ for (let index = 0; index < basicDetailData1.length; index++) {
 
 // Remove dark mode styles to revert to the default styles.
 function removeDarkMode() {
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////
+  //the heading navbar
+  var Nav = document.querySelector(".nav-wrapper");
+
+  Nav.style.background=""
+  ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+  //the search bar on the nav
+  // Get the input element
+  var inputElement = document.getElementById('gs_id50');
+
+  // Change the background color
+  inputElement.style.backgroundColor = '';
+
+  // Change the text color
+  inputElement.style.color = 'white';
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+  // over all background
+
+  var profilecontainer = document.querySelectorAll(".row");
+  profilecontainer[4].style.setProperty('padding-top', '20px', 'important');
+  profilecontainer[4].style.setProperty('background', '', 'important');
+  profilecontainer[4].style.setProperty('margin-bottom', '0px', 'important');
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////
   //the info section
 
